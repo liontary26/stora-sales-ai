@@ -67,3 +67,8 @@ store-sales-ai/
 │
 ├── requirements.txt
 └── README.md
+
+QUICKSTART:
+python -m src.train_model
+python -m uvicorn api.main:app --reload --port 8000
+streamlit run dashboard/app.py
